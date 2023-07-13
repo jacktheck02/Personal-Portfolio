@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@media (prefers-reduced-motion: no-preference) {
+    * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+    }
+}
+
+:root {
+    --bg-color: #ffffff;
+    --second-bg-color: #1693a5;
+    --nav-bg-color: #000000;
+    --text-color: #000000;
+    --nav-text-color: #ffffff;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.header{
+    background: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.header-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.name-major {
+    padding-top: 5px;
+    padding-left: 3.5rem;
+}
+
+.name-major > .last-name{
+    padding-bottom: 1rem;
+}
+
+nav {
+    width: 50%;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: var(--nav-text-color);
+    margin: 0;
+    padding-top: 5rem;
+    display: block;
+}
+
+nav > ul > li:hover {
+    cursor: pointer;
+}
+  
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.line{
+    border: 1px solid var(--nav-text-color);
+    display: block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
