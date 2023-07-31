@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jack Heckenlaible's portfolio website" />
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="portfolioStyle.css" />
 </head>
@@ -11,22 +12,82 @@
     <header class="header">
         <div class="header-text">
             <div class="name-major">
-                <h1 class="first-name">Jack</h1>
-                <h1 class="last-name">Heckenlaible</h1>
-                <h6>Computer Engineering</h6>
+                <h1 class="first-name">JACK</h1>
+                <h1 class="last-name">HECKENLAIBLE</h1>
+                <b class="major">Computer Systems Engineering</b>
             </div>
             <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <a href="#about"><b>About</b></a>
+                <a href="#projects"><b>Projects</b></a>
+                <a href="#contact"><b>Contact</b></a>
             </nav>
         </div>
         <section class="line"></section>
     </header>
     <main>
-        
+        <section class="about" id="about">
+            <div class="about-area">
+                <div class="about-text">
+                    <h1>About</h1>
+                    <h4>I'm Jack</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas erat imperdiet sed euismod. 
+                    Faucibus vitae aliquet nec ullamcorper sit amet risus. Libero nunc consequat interdum varius sit amet mattis vulputate. Lacus suspendisse faucibus interdum posuere.</p>
+                </div>
+                <img src="imgs/IMG_0905.JPG" alt="About Photo">
+            </div>
+        </section>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg" alt="Gallery image 1" class="gallery__img">
+                </figure>
+               <figure class="gallery__item gallery__item--2">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg" alt="Gallery image 4" class="gallery__img">                
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg" alt="Gallery image 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg" alt="Gallery image 6" class="gallery__img">
+                </figure> 
+            </div>
+        </div>   
+        <div class="projects-header">
+            <h1>Projects</h1>
+        </div>
+        <section class="projects" id="projects">
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number">1</h1>
+                </div>
+                <b class="project-name">Project Name</b>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nibh praesent tristique magna sit amet.</p>
+                <button type="button">More Info</button>
+            </div>
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number">2</h1>
+                </div>
+                <b class="project-name">Project Name</b>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet.</p>
+                <button type="button">More Info</button>
+            </div>
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number">3</h1>
+                </div>
+                <b class="project-name">Project Name</b>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque.</p>
+                <button type="button">More Info</button>
+            </div>                              
+        </section>
     </main>
+    <script src="portfolioScript.js"></script>
 </body>
 </html>

@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 @media (prefers-reduced-motion: no-preference) {
     * { 
+    scroll-behavior: smooth;
+    }
+}
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    scroll-behavior: smooth;
-    font-family: 'Lato', sans-serif;
-    }
+    font-family: 'Raleway', 'Lato';
 }
 
 :root {
     --bg-color: #ffffff;
-    --second-bg-color: #1693a5;
+    --second-bg-color: #edebeb;
+    --third-bg-color: #4990af;
     --nav-bg-color: #000000;
     --text-color: #000000;
     --nav-text-color: #ffffff;
@@ -24,65 +29,192 @@
 body{
     background: var(--bg-color);
     color: var(--text-color);
-
+    margin: 0;
 }
 
 .header{
     background: var(--nav-bg-color);
     color: var(--nav-text-color);
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 2rem;
+    position: fixed;
+    z-index: 100;
 }
 
 .header-text{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding-top: .25rem;
+    padding-bottom: .70rem;
 }
 
 .name-major {
-    padding-top: 5px;
-    padding-left: 3.5rem;
+    padding-top: 1rem;
+    padding-left: 4.5rem;
 }
 
-.name-major > .last-name{
-    padding-bottom: 1rem;
+.name-major h1{
+    letter-spacing: .4rem;
 }
 
-nav {
+.last-name {
+    padding-bottom: .75rem;
+}
+
+.navbar {
     width: 50%;
-}
-
-nav > ul {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
-    padding-inline-start: 0;
-    margin-block: 0;
     height: 100%;
+    margin: auto;
+    padding: 0 1rem;
 }
 
-nav > ul > li {
+.navbar a {
+    font-size: .8rem;
     color: var(--nav-text-color);
     margin: 0;
-    padding-top: 5rem;
+    padding-top: 6.75rem;
     display: block;
-}
-
-nav > ul > li:hover {
-    cursor: pointer;
-}
-  
-li > a {
     color: inherit;
     text-decoration: none;
+}
+
+.navbar a:hover {
+    cursor: pointer;
 }
 
 .line{
     border: 1px solid var(--nav-text-color);
     display: block;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
+
+.about {
+    background: linear-gradient(var(--second-bg-color), 85%, var(--bg-color));
+    padding: 12.5rem 0 2rem 0;
+}
+
+.about-area{
+    background: var(--bg-color);
+    margin: 1rem 5%;
+    display: flex;
+    align-items: center;
+}
+
+.about-text{
+    margin-left: 5rem;
+    margin-right: 15rem;
+}
+
+.about-text h1{
+    padding-bottom: .8rem;
+    font-size: 2rem;
+}
+
+.about-text h4{
+    padding-bottom: .8rem;
+}
+
+.about-area img{
+    max-width: 100%;
+    height: 21rem;
+}
+
+.container {
+    width: 80%;
+    margin: 2rem auto; 
+    align-items: center;
+}
+  
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+    grid-gap: 10px
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+  
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+  
+.gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+
+.gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.gallery__item--4 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+   
+.gallery__item--5 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
+ 
+.gallery__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 11;
+}
+
+.projects-header{
+    width: 100%;
+    margin: 0;
+    letter-spacing: .1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem; 
+}
+  
+.projects{
+    width: 100%;
+    margin: 0;
+    background-image: url(imgs/Background-Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    padding: 5rem 10px;
+}
+.project {
+    width: 17rem;
+    height: 30rem;
+    background-color: var(--bg-color);
+}
+
+
