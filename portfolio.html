@@ -30,8 +30,7 @@
                 <div class="about-text">
                     <h1>About</h1>
                     <h4>I'm Jack</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas erat imperdiet sed euismod. 
-                    Faucibus vitae aliquet nec ullamcorper sit amet risus. Libero nunc consequat interdum varius sit amet mattis vulputate. Lacus suspendisse faucibus interdum posuere.</p>
+                    <p>I am a Computer Systems Engineering major at Arizona State University. </p>
                 </div>
                 <img src="imgs/IMG_0905.JPG" alt="About Photo">
             </div>
@@ -66,17 +65,20 @@
                 <div class="project-circle">
                     <h1 class="project-number-1">1</h1>
                 </div>
-                <b class="project-name">Project Name</b>
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquet nibh praesent tristique magna sit amet.</p>
-                <button class="project-button" type="button">More Info</button>
+                <b class="project-name">Personal Portfolio</b>
+                <p class="project-description">The personal portfolio project is using HTML, CSS, and JavaScript to create
+                    a fully frontend website. It contains links to projects that are being worked on, a way to get in touch
+                    with Jack, and frontend features that demonstrate his skills.</p>
+                <button class="btn" type="button">More Info</button>
             </div>
+            <!--
             <div class="project">
                 <div class="project-circle">
                     <h1 class="project-number-2">2</h1>
                 </div>
                 <b class="project-name">Project Name</b>
                 <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet.</p>
-                <button class="project-button" type="button">More Info</button>
+                <button class="btn" type="button">More Info</button>
             </div>
             <div class="project">
                 <div class="project-circle">
@@ -84,20 +86,21 @@
                 </div>
                 <b class="project-name">Project Name</b>
                 <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque.</p>
-                <button class="project-button" type="button">More Info</button>
-            </div>                              
+                <button class="btn" type="button">More Info</button>
+            </div>
+            -->
         </section>
         <div class="slideshow-container">
             <div class="slides">
-                <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-                <p class="author">- John Keats</p>
+                <p class="quote">"It is important to draw wisdom from many different places. If you take it from only one place it becomes rigid and stale. Understanding others and other nations will help you become whole."</p>
+                <p class="author">- Uncle Iroh</p>
             </div>
             <div class="slides">
-                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                <p class="quote">"But man is not made for defeat. A man can be destroyed but not defeated."</p>
                 <p class="author">- Ernest Hemingway</p>
             </div>
             <div class="slides">
-                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                <p class="quote">"I have not failed. I've just found 10,000 ways that won't work."</p>
                 <p class="author">- Thomas A. Edison</p>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -108,6 +111,28 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+        <div class="contact-header">
+            <h1>Contact</h1>
+        </div>
+        <section class="contact" id="contact">
+            <form action="#" class="contact-form">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+        <footer>
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Jack Heckenlaible | All Rights Reserved</p>
+            </div>
+        </footer>
     </main>
     <script src="portfolioScript.js"></script>
 </body>
