@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Jack Heckenlaible's personal portfolio website. Here, you can see his list of projects or get in touch with him."/>
+    <title>Jack Heckenlaible's Personal Portfolio</title>
+    <link rel="stylesheet" href="portfolioStyle.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="header-text">
+            <div class="name-major">
+                <h1 class="first-name">JACK</h1>
+                <h1 class="last-name">HECKENLAIBLE</h1>
+                <b class="major">Computer Systems Engineering</b>
+            </div>
+            <nav class="navbar">
+                <a href="#about"><b>About</b></a>
+                <a href="#projects"><b>Projects</b></a>
+                <a href="#contact"><b>Contact</b></a>
+            </nav>
+        </div>
+        <section class="line"></section>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <div class="about-area">
+                <div class="about-text">
+                    <h1>About</h1>
+                    <h4>I'm Jack</h4>
+                    <p>I am a computer systems engineering major at Arizona State University. I was born in Des Moines, 
+                        Iowa, and raised in Ankeny, Iowa, for my whole life until leaving for college. I plan to go 
+                        straight into an accelerated master's after graduating. However, my major will be in computer 
+                        science instead of computer engineering. After high school, I quit playing competitive soccer 
+                        but still play intramurals and pickup a lot currently. I also enjoy playing video games, 
+                        traveling, and making outfits.</p>
+                </div>
+                <img src="imgs/IMG_0905.JPG" alt="About Photo">
+            </div>
+        </section>
+        <div class="container">
+            <div class="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="imgs/IMG_0606.JPG" alt="Gallery image 1" class="gallery__img">
+                </figure>
+               <figure class="gallery__item gallery__item--2">
+                    <img src="imgs/solid-color-image.jpeg" alt="Gallery image 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="imgs/Iowa.jpg" alt="Gallery image 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="imgs/Cara-Saven-Autumn-Sun-Wallpaper.jpg" alt="Gallery image 4" class="gallery__img">                
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="imgs/Easy-Strawberry-Cream-Cheese-Danish-2.jpg" alt="Gallery image 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="imgs/IMG_1099.PNG" alt="Gallery image 6" class="gallery__img">
+                </figure> 
+            </div>
+        </div>   
+        <div class="projects-header">
+            <h1>Projects</h1>
+        </div>
+        <section class="projects" id="projects">
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number-1">1</h1>
+                </div>
+                <b class="project-name">Personal Portfolio</b>
+                <p class="project-description">The personal portfolio project is using HTML, CSS, and JavaScript to create
+                    a fully frontend website. It contains links to projects that are being worked on, a way to get in touch
+                    with Jack, and frontend features that demonstrate his skills.
+                </p>
+                <a class="btn" href="https://github.com/jhecken2/Personal-Portfolio" target="_blank">More Info</a>
+            </div>
+            <!--
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number-2">2</h1>
+                </div>
+                <b class="project-name">Project Name</b>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque varius morbi enim nunc faucibus a pellentesque sit amet.</p>
+                <button class="btn" type="button">More Info</button>
+            </div>
+            <div class="project">
+                <div class="project-circle">
+                    <h1 class="project-number-3">3</h1>
+                </div>
+                <b class="project-name">Project Name</b>
+                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque.</p>
+                <button class="btn" type="button">More Info</button>
+            </div>
+            -->
+        </section>
+        <div class="slideshow-container">
+            <div class="slides">
+                <p class="quote">"It is important to draw wisdom from many different places. If you take it from only one 
+                    place it becomes rigid and stale. Understanding others and other cultures will help you become whole."
+                </p>
+                <p class="author">- Uncle Iroh</p>
+            </div>
+            <div class="slides">
+                <p class="quote">"Don't spend your time worrying about the past or thinking about the future when the 
+                    present is yet to be tended to."
+                </p>
+                <p class="author">- Rajdeep Das</p>
+            </div>
+            <div class="slides">
+                <p class="quote">"Success is no accident. It is hard work, perseverance, learning, studying, sacrifice, 
+                    and most of all love of what you are doing or learning to do"
+                </p>
+                <p class="author">- Pelé</p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="contact-header">
+            <h1>Contact</h1>
+        </div>
+        <section class="contact" id="contact">
+            <form class="contact-form" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="text" name="Email" placeholder="Email Address" required>
+                </div>
+                <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Jack Heckenlaible | All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+    <script src="portfolioScript.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxhMn_Qo4CddFjYzB2EIty_Z1Kp7fk-IoRfzPU_7eZPeYWmVHzMIpTugTDKRbvIOOrLMw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Messege sent"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
