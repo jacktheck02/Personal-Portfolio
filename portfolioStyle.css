@@ -6,6 +6,7 @@
 @media (prefers-reduced-motion: no-preference) {
     * { 
     scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 50px);
     }
 }
 
@@ -21,7 +22,7 @@
 :root {
     --bg-color: #ffffff;
     --second-bg-color: #edebeb;
-    --third-bg-color: #4990af;
+    --third-bg-color: #63a9cd;
     --nav-bg-color: #000000;
     --text-color: #000000;
     --nav-text-color: #ffffff;
@@ -31,6 +32,11 @@
     color: var(--nav-text-color);
     background-color: var(--third-bg-color);
     padding: .7rem 3rem;
+    font-size: .75rem;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
 
 body{
@@ -156,7 +162,7 @@ body{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 8;
 }
   
 .gallery__item--2 {
@@ -167,29 +173,29 @@ body{
 }
 
 .gallery__item--3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 
 .gallery__item--4 {
-    grid-column-start: 6;
-    grid-column-end: 9;
-    grid-row-start: 1;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
     grid-row-end: 8;
 }
    
 .gallery__item--5 {
-    grid-column-start: 6;
-    grid-column-end: 9;
+    grid-column-start: 3;
+    grid-column-end: 6;
     grid-row-start: 8;
     grid-row-end: 11;
 }
  
 .gallery__item--6 {
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 11;
 }
@@ -302,7 +308,7 @@ body{
 }
 
 .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,1.5);
+    background-color: rgb(0,0,0);
     color: white;
 }
   
@@ -384,4 +390,37 @@ input[type="text"], input[type="number"], textarea{
 
 .contact form textarea{
     resize: none;
+}
+
+#msg{
+    display: block;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.footer{
+    padding-top: 3rem;
+}
+
+/*BREAKPOINTS (currently still under development)*/
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 35%;
+    }
+
+    .footer{
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 25%;
+    }
 }
