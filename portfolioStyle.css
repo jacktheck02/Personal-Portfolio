@@ -402,7 +402,7 @@ input[type="text"], input[type="number"], textarea{
     padding-top: 3rem;
 }
 
-/*BREAKPOINTS (currently still under development)*/
+/*BREAKPOINTS (currently still under development)
 @media (max-width: 1200px){
     html{
         font-size: 55%;
@@ -424,3 +424,4 @@ input[type="text"], input[type="number"], textarea{
         font-size: 25%;
     }
 }
+*/
