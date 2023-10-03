@@ -404,6 +404,7 @@ input[type="text"], input[type="number"], textarea{
 
 /*BREAKPOINTS (currently still under development)*/
 /* Mobile devices */
+/*
 @media (max-width: 767px) {
     .header-text {
         flex-direction: column;
@@ -459,20 +460,21 @@ input[type="text"], input[type="number"], textarea{
     }
 }
 /* Tablets and small desktops */
+/*
 @media (min-width: 768px) and (max-width: 1199px) {
     html{
         font-size: 55%;
     }
 }
+*/
 
 
-/*
 @media (max-width: 1200px){
     html{
         font-size: 55%;
     }
 }
-
+/*
 @media (max-width: 768px){
     html{
         font-size: 35%;
