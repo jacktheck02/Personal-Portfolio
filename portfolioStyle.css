@@ -403,19 +403,99 @@ input[type="text"], input[type="number"], textarea{
 }
 
 /*BREAKPOINTS (currently still under development)*/
-/* Mobile devices */
-/*
-@media (max-width: 767px) {
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    html{
+        font-size: 100%;
+    }
+
     .header-text {
         flex-direction: column;
         align-items: center;
+        padding-top: .001rem;
+    }
+
+    .navbar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .navbar a {
+        padding-top: 0;
+        margin: 0 1rem;
+    }
+
+    .line {
+       display: none;
+    }
+
+    .about-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .about-area img {
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .project {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .slides {
+        margin: 0 2rem;
+    }
+
+    .quote {
+        margin: 0 2rem;
+    }
+}
+
+
+
+
+
+/*
+@media (max-width: 768px){
+    html{
+        font-size: 35%;
+    }
+
+    .footer{
+        padding-top: 10rem;
+    }
+}
+
+@media (max-width: 450px){
+
+    .header-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .name-major{
+        text-align: center;
     }
 
     .navbar {
         width: 100%;
         justify-content: center;
         margin-top: 1rem;
-        padding-bottom: 1rem;
     }
 
     .navbar a {
@@ -447,7 +527,6 @@ input[type="text"], input[type="number"], textarea{
     }
 
     .project {
-        width: 100%;
         margin-bottom: 2rem;
     }
 
@@ -459,35 +538,5 @@ input[type="text"], input[type="number"], textarea{
         margin: 0 2rem;
     }
 }
-/* Tablets and small desktops */
-/*
-@media (min-width: 768px) and (max-width: 1199px) {
-    html{
-        font-size: 55%;
-    }
-}
 */
 
-
-@media (max-width: 1200px){
-    html{
-        font-size: 55%;
-    }
-}
-/*
-@media (max-width: 768px){
-    html{
-        font-size: 35%;
-    }
-
-    .footer{
-        padding-top: 10rem;
-    }
-}
-
-@media (max-width: 450px){
-    html{
-        font-size: 25%;
-    }
-}
-*/
