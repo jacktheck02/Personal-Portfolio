@@ -414,10 +414,19 @@ input[type="text"], input[type="number"], textarea{
         font-size: 100%;
     }
 
+    .header{
+        padding-bottom: 1rem;
+    }
+
     .header-text {
         flex-direction: column;
         align-items: center;
         padding-top: .001rem;
+    }
+
+    .name-major{
+        text-align: center;
+        padding-right: 4.5rem;
     }
 
     .navbar {
@@ -430,10 +439,6 @@ input[type="text"], input[type="number"], textarea{
     .navbar a {
         padding-top: 0;
         margin: 0 1rem;
-    }
-
-    .line {
-       display: none;
     }
 
     .about-area {
