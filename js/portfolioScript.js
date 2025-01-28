@@ -27,7 +27,13 @@ function showSlides(n) {
 }
 
 /*============================= Scroll Padding ================================*/
-const navigationHeight = document.querySelector('.header').offsetHeight + document.querySelector('.projects-header').offsetHeight;
+function updateScrollPadding() {
+    const header = document.querySelector('.header');
+    const navigationHeight = header.offsetHeight + document.querySelector('.projects-header').offsetHeight;
+    document.documentElement.style.setProperty('--scroll-padding', `${navigationHeight - 1}px`);
+}
 
-document.documentElement.style.setProperty('--scroll-padding', navigationHeight - 1 + "px");
-
+// Update on page load and when resizing or scrolling
+window.addEventListener('load', updateScrollPadding);
+window.addEventListener('resize', updateScrollPadding);
+window.addEventListener('scroll', updateScrollPadding);

@@ -11,10 +11,8 @@
 <body>
     <header class="header">
         <div class="header-text">
-            <div class="name-major">
-                <h1 class="first-name">JACK</h1>
-                <h1 class="last-name">HECKENLAIBLE</h1>
-                <b class="major">Computer Systems Engineering</b>
+            <div class="name">
+                <h1 class="full-name"><span class="first-name">JACK</span>&nbsp<span class="last-name">HECKENLAIBLE</span></h1>
             </div>
             <nav class="navbar">
                 <a href="#about"><b>About</b></a>
@@ -29,13 +27,14 @@
             <div class="about-area">
                 <div class="about-text">
                     <h1>About</h1>
-                    <h4>I'm Jack</h4>
-                    <p>I am a computer systems engineering major at Arizona State University. I was born in Des Moines, 
-                        Iowa, and raised in Ankeny, Iowa, for my whole life until leaving for college. I plan to go 
-                        straight into an accelerated master's after graduating. However, my major will be in computer 
-                        science instead of computer engineering. After high school, I quit playing competitive soccer 
-                        but still play intramurals and pickup a lot currently. I also enjoy playing video games, 
-                        traveling, and streetwear.</p>
+                    <h4>I'm Jack,</h4>
+                    <p>a computer science graduate student at Arizona State University, where I also 
+                        received my bachelor's in computer systems engineering. I was a Software Developer Intern
+                        at Farmers Mutual Hail, working with a team of full-stack developers on an internal 
+                        application. Born in Des Moines, Iowa, and raised in Ankeny, I've always had a love for 
+                        problem-solving and thinking outside the box. Aside from work and studies, I enjoy 
+                        playing soccer and video games and exploring the latest movies and shows. I'm excited to 
+                        connect and collaborate on creating impactful technology!</p>
                 </div>
                 <img src="imgs/IMG_0905.JPG" alt="About Photo">
             </div>
@@ -46,7 +45,7 @@
                     <img src="imgs/IMG_0606.JPG" alt="Gallery image 1" class="gallery__img">
                 </figure>
                <figure class="gallery__item gallery__item--2">
-                    <img src="imgs/solid-color-image.jpeg" alt="Gallery image 2" class="gallery__img">
+                    <img src="imgs/IMG_1587.JPG" alt="Gallery image 2" class="gallery__img">
                 </figure>
                 <figure class="gallery__item gallery__item--3">
                     <img src="imgs/Iowa.jpg" alt="Gallery image 3" class="gallery__img">
@@ -70,38 +69,39 @@
                 <div class="project-circle">
                     <h1 class="project-number-1">1</h1>
                 </div>
-                <b class="project-name">Personal Portfolio</b>
-                <p class="project-description">The personal portfolio project is using HTML, CSS, and JavaScript to create
-                    a fully frontend website. It contains links to projects that are being worked on, a way to get in touch
-                    with Jack, and frontend features that demonstrate his skills.
-                </p>
-                <a class="btn" href="https://github.com/jhecken2/Personal-Portfolio" target="_blank">More Info</a>
+                <b class="project-name">3D ML Environment</b>
+                <p class="project-description">A 3D learning environment that helps users understand machine 
+                    learning algorithms through interactive explanations and visualizations. It incorporates
+                    multiple supervised and unsupervised machine learning algorithms.</p>
+                <a class="btn" href="https://github.com/BaylorH/MachineLearningEnvironment" target="_blank">More Info</a>
             </div>
             <div class="project">
                 <div class="project-circle">
                     <h1 class="project-number-2">2</h1>
                 </div>
-                <b class="project-name">3D ML Environment</b>
-                <p class="project-description">This project is about creating a 3D educational environment using Unity where
-                     students can explore and learn about supervised learning algorithms in a more interactive and engaging way.
-                     The model is currently a binary classifer.</p>
-                <a class="btn" href="https://github.com/BaylorH/MachineLearningEnvironment" target="_blank">More Info</a>
+                <b class="project-name">Sentiment Analysis</b>
+                <p class="project-description">A Python-based tool that analyzes social media sentiment on 
+                    NVIDIA stock to suggest trading strategies based on user-defined thresholds. To ensure 
+                    accuracy, I incorporated a back-testing framework that evaluates these strategies.</p>
+                <a class="btn" href="https://www.linkedin.com/in/jacktheck02/details/projects/" target="_blank">More Info</a>
             </div>
             <div class="project">
                 <div class="project-circle">
                     <h1 class="project-number-3">3</h1>
                 </div>
-                <b class="project-name">Project Name</b>
-                <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque.</p>
-                <button class="btn" type="button">More Info</button>
+                <b class="project-name">Face Recognition Pipeline</b>
+                <p class="project-description">The pipeline processes video input in the cloud and identifies 
+                    individuals using advanced face recognition techniques. I configured Python-based AWS Lambda 
+                    functions with ffmpeg and facenet-pytorch to enable video analysis.</p>
+                <a class="btn" href="https://www.linkedin.com/in/jacktheck02/details/projects/" target="_blank">More Info</a>
             </div>
             
         </section>
         <div class="slideshow-container">
             <div class="slides">
-                <p class="quote">"It is important to draw wisdom from many different places. If you take it from only one 
-                    place it becomes rigid and stale. Understanding others and other cultures will help you become whole."
-                </p>
+                <p class="quote">"It is important to draw wisdom from many different places. If we take it from
+                     only one place, it becomes rigid and stale. Understanding others, the other elements, and
+                     the other nations, will help you to become whole"</p>
                 <p class="author">- Uncle Iroh</p>
             </div>
             <div class="slides">
@@ -138,7 +138,7 @@
         </section>
         <footer class="footer">
             <div class="footer-text">
-                <p>Copyright &copy; 2023 by Jack Heckenlaible | All Rights Reserved</p>
+                <p>Copyright &copy; 2025 by Jack Heckenlaible | All Rights Reserved</p>
             </div>
         </footer>
     </main>
@@ -149,16 +149,14 @@
         const msg = document.getElementById("msg")
 
         form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)}).then(response => {
                 msg.innerHTML = "Messege sent"
                 setTimeout(function(){
                     msg.innerHTML = ""
                 }, 5000)
                 form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
+            }).catch(error => console.error('Error!', error.message))
         })
     </script>
 </body>

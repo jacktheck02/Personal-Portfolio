@@ -33,6 +33,7 @@
     background-color: var(--third-bg-color);
     padding: .7rem 3rem;
     font-size: .75rem;
+    border-radius: 1.5rem;
 }
 
 .btn:hover{
@@ -62,12 +63,12 @@ body{
     padding-bottom: .70rem;
 }
 
-.name-major {
+.name {
     padding-top: 1rem;
     padding-left: 4.5rem;
 }
 
-.name-major h1{
+.name h1{
     letter-spacing: .4rem;
 }
 
@@ -90,7 +91,7 @@ body{
     font-size: .8rem;
     color: var(--nav-text-color);
     margin: 0;
-    padding-top: 6.75rem;
+    padding-top: 1rem;
     display: block;
     color: inherit;
     text-decoration: none;
@@ -109,7 +110,7 @@ body{
 
 .about {
     background: var(--second-bg-color);
-    padding: 12.5rem 0 2rem 0;
+    padding: 8.3rem 0 2rem 0;
 }
 
 .about-area{
@@ -264,7 +265,7 @@ body{
 
 .project-name{
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin: 0 2rem 2.5rem;
 }
 
 .project-description{
@@ -344,11 +345,14 @@ body{
 }
 
 .author {
-    padding-top: 5rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
     font-weight: bold;
     color: var(--nav-text-color);
-    letter-spacing: .05rem;
-    font-size: .7rem;
+    letter-spacing: 0.05rem;
+    font-size: 0.7rem;
+    width: 100%;
 }
 
 .contact-header{
@@ -415,6 +419,7 @@ input[type="text"], input[type="number"], textarea{
     }
 
     .header{
+        font-size: 75%;
         padding-bottom: 1rem;
     }
 
@@ -424,7 +429,7 @@ input[type="text"], input[type="number"], textarea{
         padding-top: .001rem;
     }
 
-    .name-major{
+    .name{
         text-align: center;
         padding-right: 4.5rem;
     }
@@ -456,6 +461,24 @@ input[type="text"], input[type="number"], textarea{
         height: auto;
         margin-top: 2rem;
     }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-gap: 10px;
+      }
+    
+      .gallery__item {
+        grid-column: 1;
+        grid-row: auto;
+      }
+    
+      .gallery__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
 
     .project {
         width: 90%;
