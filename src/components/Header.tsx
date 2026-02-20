@@ -9,7 +9,9 @@ const Header: Component = () => {
 					</div>
 					<nav class="w-1/2 flex justify-evenly flex-wrap items-center h-full m-auto navbar px-4">
 						<a href="#about"><b>About</b></a>
+						<a href="#experience"><b>Experience</b></a>
 						<a href="#projects"><b>Projects</b></a>
+						<a href="#blog"><b>Blog</b></a>
 						<a href="#contact"><b>Contact</b></a>
 					</nav>
 				</div>
@@ -18,4 +20,4 @@ const Header: Component = () => {
     );
 };
 
-export default Header
+export default Header;
