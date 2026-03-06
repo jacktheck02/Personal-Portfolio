@@ -1,0 +1,123 @@
+import { For } from 'solid-js';
+import WireframeBall from './components/WireframeBall.tsx';
+import ProjectLink from './components/ProjectLink.tsx';
+import Circle from './components/Circle.tsx';
+import { 
+  FiMail,
+  FiGithub,
+  FiTwitter,
+  FiLinkedin
+} from 'solid-icons/fi'
+
+<div class="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+  <div class="flex-1">
+    <p class="text-5xl font-extrabold text-nord-6 mb-4 tracking-tight">Jack Heckenlaible</p>
+    <p class="text-xl text-nord-4 leading-relaxed max-w-lg mb-6">
+      Avoiding the permanent underclass one day at a time.
+    </p>
+    <div class="flex gap-2">
+    <For each={[
+      {
+        href: "mailto:jacktheck02@proton.me",
+        icon: <FiMail size={24} />
+      },
+      {
+        href: "https://www.linkedin.com/in/jacktheck02/",
+        icon: <FiLinkedin size={24} />
+      },
+      {
+        href: "https://x.com/JackHeckenlaib1",
+        icon: <FiTwitter size={24} />
+      },
+      {
+        href: "https://github.com/jacktheck02",
+        icon: <FiGithub size={24} />
+      }
+    ]} fallback={<div class="text-nord-4">Loading...</div>}>
+      {(item) => <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Circle size={48}>
+            {item.icon}
+          </Circle>
+        </a>
+       }
+    </For>
+    </div>
+  </div>
+  <Circle size={256}>
+    <WireframeBall />
+  </Circle>
+</div>
+
+## About Me
+
+I'm a developer who enjoys turning complex problems into elegant solutions. My toolkit primarily focuses on **SolidJS**, **TypeScript**, and high-performance frontend architectures. 
+
+> "The art of programming is the skill of controlling complexity." — Marijn Haverbeke
+
+I created this portfolio to experiment with blending standard markdown readability with rich, highly interactive components, all wrapped up in the beautiful [Nord color palette](https://www.nordtheme.com/).
+
+
+## Projects
+
+Here are some of the projects I've been building recently. Hover over the links to see a rich preview of the tech stack and details!
+
+<ul class="list-disc pl-6 space-y-4">
+  <For
+    each={[
+      {
+        name: 'Project Alpha',
+        intro: 'I built a full-stack e-commerce dashboard using',
+        href: 'https://github.com/jacktheck02/project-alpha',
+        title: 'Project Alpha',  
+        description:
+          'A real-time analytics dashboard for e-commerce stores tracking inventory and sales velocity with WebSocket integrations.',
+        tags: ['SolidJS', 'Node.js', 'WebSockets', 'TailwindCSS'],
+        linkText: 'SolidJS and WebSockets',
+        outro: 'to handle real-time inventory updates.'
+      },
+      {
+        name: 'Markdown Explorer',
+        intro: 'A web-based utility for parsing and visualizing complex markdown ASTs using',
+        href: 'https://github.com/jacktheck02/markdown-explorer',
+        title: 'Markdown Explorer',
+        description:
+          'A visual playground that parses Markdown into an Abstract Syntax Tree (AST) and renders an interactive node graph.',
+        tags: ['TypeScript', 'Remark', 'Three.js', 'Vite'],
+        linkText: 'TypeScript and Remark',
+        outro: 'This tool helps developers debug their custom plugins.'
+      },
+      {
+        name: 'Nord UI Kit',
+        intro: 'A collection of accessible components strictly adhering to the Nord theme design language. Check out the',
+        href: 'https://github.com/jacktheck02/nord-ui-kit',
+        title: 'Nord UI Kit',
+        description:
+          'A beautifully crafted, accessible component library built entirely with CSS variables mapping to the Nord palette.',
+        tags: ['CSS', 'Accessibility', 'Design System'],
+        linkText: 'Design System Reference',
+        outro: 'for more.'
+      }
+    ]}
+    fallback={<li class="text-nord-4">No projects to show yet...</li>}
+  >
+    {(project) => (
+      <li>
+        <strong>{project.name}</strong>: {project.intro}{' '}
+        <ProjectLink
+          href={project.href}
+          title={project.title}
+          description={project.description}
+          tags={project.tags}
+        >
+          {project.linkText}
+        </ProjectLink>{' '}
+        {project.outro}
+      </li>
+    )}
+  </For>
+</ul>
+

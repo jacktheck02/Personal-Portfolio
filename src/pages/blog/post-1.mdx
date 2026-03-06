@@ -1,0 +1,35 @@
+# Getting Started with SolidJS
+
+*Published: Oct 24, 2023*
+
+SolidJS is a declarative JavaScript library for creating user interfaces. Unlike React, Solid does not use a Virtual DOM. Instead, it compiles its templates down to real DOM nodes and wraps updates in fine-grained reactions. This means that when your state updates, only the code that depends on it runs.
+
+## Why SolidJS?
+
+1.  **Performance:** Solid is consistently ranked as one of the fastest JavaScript frameworks available.
+2.  **Familiarity:** If you know React, you'll feel right at home with Solid's JSX syntax and hooks-like primitives (Signals, Effects, Memos).
+3.  **Predictability:** Components run exactly once. The only things that run again are the reactive primitives. No more stale closures or confusing dependency arrays!
+
+### A Simple Example
+
+Here is a basic counter component in SolidJS:
+
+```tsx
+import { createSignal } from "solid-js";
+
+function Counter() {
+  const [count, setCount] = createSignal(0);
+
+  return (
+    <button onClick={() => setCount(count() + 1)}>
+      Count: {count()}
+    </button>
+  );
+}
+```
+
+Notice how we call `count()` as a function. This is how Solid tracks dependencies. When `count` updates, only the text node inside the button updates, not the whole component!
+
+### Conclusion
+
+SolidJS brings a fresh perspective to frontend development, combining the best parts of React's developer experience with unmatched performance. If you're starting a new project, I highly recommend giving it a try.
