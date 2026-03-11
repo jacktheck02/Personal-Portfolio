@@ -96,6 +96,7 @@ export default function WireframeBall() {
     <canvas
       ref={wireframeCanvas}
       class="w-50 h-50 flex items-center justify-center cursor-grab active:cursor-grabbing touch-none"
+      aria-hidden="true"
     />
   );
 }
