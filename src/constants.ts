@@ -42,7 +42,7 @@ const projects : Project[] = [
       "  gives you up to date data on your favorite football (soccer) leagues.",
   },
   {
-    name: "Mini Graph DB ",
+    name: "Mini Graph DB",
     intro:
       "This is to redeem myself from a project that I was not able to finish. I am going to convert a minibase to a",
     href: "",
