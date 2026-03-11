@@ -1,6 +1,7 @@
 import { A } from '@solidjs/router';
+import { ParentComponent } from 'solid-js';
 
-export default function Layout(props: any) {
+const Layout: ParentComponent = (props) => {
   return (
     <div class="min-h-screen py-12 md:py-24 px-4 sm:px-6">
       <div class="max-w-4xl mx-auto bg-nord-0/80 backdrop-blur-md rounded-2xl shadow-[0_0_40px_rgba(46,52,64,0.6)] border-2 border-nord-4 overflow-hidden p-6 sm:p-12">
@@ -15,10 +16,10 @@ export default function Layout(props: any) {
         <div class="mdx-content">
           {props.children}
         </div>
-        <footer class="mt-24 pt-8 border-t border-nord-3 text-center text-nord-4 text-sm">
-          <p>Crafted by Jack Heckenlaible. Powered by SolidJS, Vite, and MDX.</p>
-        </footer>
+        <footer class="mt-12 pt-8 border-t border-nord-3 text-center text-nord-4 text-sm" />
       </div>
     </div>
   );
 }
+
+export default Layout;
