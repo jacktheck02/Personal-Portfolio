@@ -1,9 +1,10 @@
 ## Usage
 
-This template's dependencies are maintained via [pnpm](https://pnpm.io) using `pnpm up -Lri`.
+This portfolio's dependencies are maintained via [pnpm](https://pnpm.io) using `pnpm up -Lri`.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work, and this file can be safely removed once you clone a template.
+The committed `pnpm-lock.yaml` file ensures reproducible installs. While you may use any compatible Node.js package manager locally, the lockfile should remain in version control for this project.
 
+To install the dependencies for this portfolio, run:
 ```bash
 $ npm install # or pnpm install or yarn install
 ```
