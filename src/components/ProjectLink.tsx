@@ -37,7 +37,7 @@ export default function ProjectLink(props: ProjectLinkProps) {
         <div 
           id={tooltipId}
           role="tooltip"
-          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 rounded-lg bg-nord-1 border border-nord-3 shadow-xl z-50 transition-opacity transition-transform duration-200"
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 rounded-lg bg-nord-1 border border-nord-3 shadow-xl z-50 transition-opacity duration-200"
           style={{ "backdrop-filter": "blur(8px)" }}
         >
           <div class="flex items-center space-x-2 mb-2">
@@ -56,7 +56,7 @@ export default function ProjectLink(props: ProjectLinkProps) {
           </div>
           {/* Arrow pointing down */}
           <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-3 border-r-8 border-r-transparent"></div>
-          <div class="absolute -bottom-[0.4375rem] left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-1 border-r-8 border-r-transparent"></div>
+          <div class="absolute -bottom-1.75 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-1 border-r-8 border-r-transparent"></div>
         </div>
       </Show>
     </span>
