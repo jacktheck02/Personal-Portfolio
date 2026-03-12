@@ -16,12 +16,12 @@
     "tailwindcss": "^4.1.13",
     "typescript": "^5.9.2",
     "vite": "^7.1.4",
-    "vite-plugin-solid": "^2.11.8"
+    "vite-plugin-solid": "^2.11.8",
+    "@types/three": "^0.183.1"
   },
   "dependencies": {
     "@mdx-js/rollup": "^3.1.1",
     "@solidjs/router": "^0.15.4",
-    "@types/three": "^0.183.1",
     "solid-icons": "^1.2.0",
     "solid-js": "^1.9.9",
     "solid-mdx": "^0.0.7",
