@@ -1,7 +1,7 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
-  "description": "",
+  "name": "jacktheck02-personal-portfolio",
+  "version": "0.5.0",
+  "description": "Personal portfolio of Jack Heckenlaible",
   "type": "module",
   "scripts": {
     "start": "vite",

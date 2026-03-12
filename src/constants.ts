@@ -21,7 +21,7 @@ const projects : Project[] = [
   {
     name: "Whistleblower",
     intro: "AI agents that rat out their own creators, ",
-    href: "",
+    href: "https://github.com/jacktheck02/whistleblower",
     title: "Whistleblower",
     description:
       "A web extension that uses AI research agents, with a modern and simplistic design.",
@@ -45,7 +45,7 @@ const projects : Project[] = [
     name: "Mini Graph DB",
     intro:
       "This is to redeem myself from a project that I was not able to finish. I am going to convert a minibase to a",
-    href: "",
+    href: "https://github.com/jacktheck02/minibase",
     title: "Mini Graph DB",
     description:
       "A lightweight graph database implemented in Java from the Java version of minibase.",
