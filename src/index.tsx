@@ -10,7 +10,6 @@ import App from './App.mdx';
 import Layout from './components/Layout';
 import Experience from './pages/Experience';
 import Blog from './pages/Blog';
-import Post1 from './pages/blog/post-1.mdx';
 
 const root = document.getElementById('root');
 
@@ -25,6 +24,5 @@ render(() => (
     <Route path="/" component={App} />
     <Route path="/experience" component={Experience} />
     <Route path="/blog" component={Blog} />
-    <Route path="/blog/post-1" component={Post1} />
   </Router>
 ), root!);
