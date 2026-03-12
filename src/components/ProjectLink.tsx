@@ -28,7 +28,7 @@ export default function ProjectLink(props: ProjectLinkProps) {
 
       <Show when={isHovered()}>
         <div 
-          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 rounded-lg bg-nord-1 border border-nord-3 shadow-xl z-50 animate-in fade-in zoom-in-95 duration-200"
+          class="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-64 p-4 rounded-lg bg-nord-1 border border-nord-3 shadow-xl z-50 transition-opacity transition-transform duration-200"
           style={{ "backdrop-filter": "blur(8px)" }}
         >
           <div class="flex items-center space-x-2 mb-2">
