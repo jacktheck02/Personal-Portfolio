@@ -47,7 +47,7 @@ export default function ProjectLink(props: ProjectLinkProps) {
           </div>
           {/* Arrow pointing down */}
           <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-3 border-r-8 border-r-transparent"></div>
-          <div class="absolute -bottom-1.75 left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-1 border-r-8 border-r-transparent"></div>
+          <div class="absolute -bottom-[0.4375rem] left-1/2 -translate-x-1/2 w-0 h-0 border-l-8 border-l-transparent border-t-8 border-t-nord-1 border-r-8 border-r-transparent"></div>
         </div>
       </Show>
     </span>
