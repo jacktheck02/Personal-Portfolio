@@ -85,6 +85,12 @@ export default function WireframeBall() {
       t, 0, -1,   t, 0, 1,  -t, 0, -1,  -t, 0, 1,
     ];
 
+    // Radius of the source geometry this wireframe is derived from.
+    const BALL_RADIUS = 1.6;
+    // Fraction of the ball radius used to position the clipping planes.
+    const CLIP_PLANE_OFFSET_RATIO = 1.31 / 1.6;
+    const CLIP_PLANE_OFFSET = BALL_RADIUS * CLIP_PLANE_OFFSET_RATIO;
+
     const basePlanes: { normal: THREE.Vector3; constant: number }[] = [];
     for (let i = 0; i < vertices.length; i += 3) {
       const normal = new THREE.Vector3(
@@ -92,7 +98,10 @@ export default function WireframeBall() {
         vertices[i + 1],
         vertices[i + 2],
       ).normalize();
-      basePlanes.push({ normal: normal.clone(), constant: 1.31 });
+      basePlanes.push({
+        normal: normal.clone(),
+        constant: CLIP_PLANE_OFFSET,
+      });
     }
 
     const state = {
