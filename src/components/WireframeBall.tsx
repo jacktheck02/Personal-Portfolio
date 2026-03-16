@@ -68,9 +68,9 @@ function buildClippedGeometry(
 
   const geo = new THREE.BufferGeometry();
   geo.setAttribute("position", new THREE.Float32BufferAttribute(verts, 3));
-  geo.computeVertexNormals();
   return geo;
 }
+
 
 export default function WireframeBall() {
   let wireframeCanvas!: HTMLCanvasElement;
