@@ -13,8 +13,10 @@ function clipPolygon(
     const next = polygon[(i + 1) % polygon.length];
     const dCurr = current.dot(planeNormal) + planeConstant;
     const dNext = next.dot(planeNormal) + planeConstant;
-    if (dCurr >= 0) output.push(current);
-    if (dCurr >= 0 !== dNext >= 0) {
+    const currInside = dCurr >= 0;
+    const nextInside = dNext >= 0;
+    if (currInside) output.push(current);
+    if (currInside !== nextInside) {
       const t = dCurr / (dCurr - dNext);
       output.push(new THREE.Vector3().lerpVectors(current, next, t));
     }
