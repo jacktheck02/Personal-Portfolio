@@ -30,7 +30,8 @@ function buildClippedGeometry(
 ): THREE.BufferGeometry {
   const pos = source.getAttribute("position");
   const idx = source.getIndex();
-  const triCount = idx ? idx.count / 3 : pos.count / 3;
+  const vertexCount = idx ? idx.count : pos.count;
+  const triCount = Math.floor(vertexCount / 3);
   const verts: number[] = [];
 
   for (let t = 0; t < triCount; t++) {
