@@ -5,11 +5,11 @@ dist
 .netlify
 .vinxi
 app.config.timestamp_*.js
-src/pages/blog/
 
 # Environment
 .env
 .env*.local
+.zed
 
 # dependencies
 /node_modules

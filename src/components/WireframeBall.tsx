@@ -71,7 +71,6 @@ function buildClippedGeometry(
   return geo;
 }
 
-
 export default function WireframeBall() {
   let wireframeCanvas!: HTMLCanvasElement;
 
@@ -80,7 +79,7 @@ export default function WireframeBall() {
 
     // prettier-ignore
     const vertices = [
-     -1, t, 0,   1, t, 0,   -1, -t, 0,   1, -t, 0,   
+     -1, t, 0,   1, t, 0,   -1, -t, 0,   1, -t, 0,
       0, -1, t,   0, 1, t,   0, -1, -t,   0, 1, -t,
       t, 0, -1,   t, 0, 1,  -t, 0, -1,  -t, 0, 1,
     ];
