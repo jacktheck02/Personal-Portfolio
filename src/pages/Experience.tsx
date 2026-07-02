@@ -13,7 +13,7 @@ const Experience: Component = () => {
     {
       title: "Software Engineer Intern",
       company: "Blue Cross Blue Shield of Arizona",
-      period: "May 2025 - Present",
+      period: "May 2025 - April 2026",
       description:
         "I spearheaded an internal proof of concept that aggregates code scan data much like Qlty or SonarQube.",
       skills: ["Python", "TypeScript", "Azure"],
@@ -45,13 +45,13 @@ const Experience: Component = () => {
                   {item.period}
                 </span>
               </div>
-              <h3 class="text-2xl font-bold text-nord-6">{item.title}</h3>
+              <h4 class="text-2xl font-bold text-nord-6">{item.title}</h4>
               <div class="text-nord-4 mb-4 font-medium">{item.company}</div>
               <p class="text-nord-4 leading-relaxed mb-4">{item.description}</p>
               <div class="flex flex-wrap gap-2">
                 <For each={item.skills}>
                   {(skill) => (
-                    <span class="px-2.5 py-1 text-xs rounded bg-nord-1 text-nord-9 border border-nord-3">
+                    <span class="px-2.5 py-1 text-xs rounded bg-nord-2 text-nord-4 border border-nord-4">
                       {skill}
                     </span>
                   )}
